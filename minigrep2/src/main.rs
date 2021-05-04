@@ -3,6 +3,7 @@ extern crate minigrep2;
 use std::env;
 use std::process;
 
+use minigrep2::Config;
 
 fn main() {
     let config = Config::new(env::args()).unwrap_or_else(|err| {
