@@ -1,8 +1,14 @@
+//! # minigrep2
+//!
+//! A library for grep textfile
+//!
+
 use std::fs::File;
 use std::io::prelude::*;
 use std::error::Error;
 use std::env;
 
+/// The setting values.
 pub struct Config {
     query: String,
     filename: String,
@@ -10,6 +16,7 @@ pub struct Config {
 }
 
 impl Config {
+    /// Constructor
     pub fn new(mut args: std::env::Args) -> Result<Config, &'static str> {
         args.next();
 

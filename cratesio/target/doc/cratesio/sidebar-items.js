@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["add_one","Adds one to the number given. 与えられた数値に1を足す。"]]});
